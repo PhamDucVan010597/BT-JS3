@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- BÀI TẬP 1 -->
+    <h1>BÀI TẬP 1</h1>
+    <div class="card w-50">
+        <div class="card-header text-center">
+            <h3 class="text-danger">TÍNH LƯƠNG NHÂN VIÊN</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <p>Số giờ làm:</p>
+                <input type="text" id="giolam" class="form-control">
+            </div>
+            <div class="form-group">
+                <p>Lương Giờ:</p>
+                <input type="text" id="luonggio" class="form-control">
+            </div>
+            <div class="text-center">
+                <button id="tinhluong" class="btn btn-outline-danger">Tính Lương</button>
+            </div>
+
+        </div>
+        <div class="card-footer alert alert-success">
+            <span id="bangluong"></span>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+    <!-- BÀI TẬP 2 -->
+    <h1>BÀI TẬP 2</h1>
+    <div class="card w-50">
+        <div class="card-header text-center">
+            <h3 class="text-danger">TÍNH GIÁ TRỊ TRUNG BÌNH</h3>
+        </div>
+        <div class=" row mt-2 ">
+            <div class="col-4">
+                <input type="number" id="sothunhat" class="form-control " placeholder="Nhập số thứ 1">
+            </div>
+            <div class="col-4">
+                <input type="number" id="sothuhai" class="form-control " placeholder="Nhập số thứ 2">
+            </div>
+            <div class="col-4">
+                <input type="number" id="sothuba" class="form-control " placeholder="Nhập số thứ 3">
+            </div>
+            <div class="col-4">
+                <input type="number" id="sothutu" class="form-control " placeholder="Nhập số thứ 4">
+            </div>
+            <div class="col-4">
+                <input type="number" id="sothunam" class="form-control " placeholder="Nhập số thứ 5">
+            </div>
+
+
+
+        </div>
+        <div class="text-center mt-3">
+            <button id="tinhtb" class="btn btn-outline-danger">Tính giá trị trung bình</button>
+        </div>
+        <div class="card-footer alert alert-success mt-3">
+            <span id="giatritb"></span>
+        </div>
+    </div>
+    <hr>
+    <br>
+
+    <!-- BÀI TẬP 3 -->
+    <h1>BÀI TẬP 3</h1>
+    <div class="card w-50">
+        <div class="card-header text-center">
+            <h3 class="text-danger">QUY ĐỔI TIỀN </h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <p>Giá USD: 1 USD=23.500 VNĐ</p>
+                <input type="number" id="usd" class="form-control" placeholder="Nhập số tiền USD">
+                <div class="text-center mt-2">
+                    <button id="doitien" class="btn btn-outline-danger">Quy đổi</button>
+                </div>
+
+            </div>
+            <div class="card-footer alert alert-success">
+                <span id="quydoi"></span>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <!-- BÀI TẬP 4 -->
+    <h1>BÀI TẬP 4</h1>
+    <div class="card w-50">
+        <div class="card-header text-center">
+            <h3 class="text-danger">TÍNH DIỆN TÍCH,CHU VI HÌNH CHỮ NHẬT</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <input type="number" id="chieudai" class="form-control " placeholder="Nhập chiều dài">
+            </div>
+            <div class="form-group">
+                <input type="number" id="chieurong" class="form-control" placeholder="Nhập Chiều Rộng">
+            </div>
+            <div class="text-center">
+                <button id="tinhketqua" class="btn btn-outline-danger">Tính</button>
+            </div>
+
+        </div>
+        <div class="card-footer alert alert-success">
+            <span id="ketquabai4"></span>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <!-- BÀI TẬP 5 -->
+    <h1> BÀI TẬP 5</h1>
+    <div class="card w-50">
+        <div class="card-header text-center">
+            <h3 class="text-danger">TÍNH TỔNG 2 KÝ SỐ</h3>
+        </div>
+        <div class="card-body">
+            <div class="form-group">
+                <p>Nhập số có 2 chữ số</p>
+                <input type="number" id="kyso" class="form-control">
+            </div>
+
+            <div class="text-center">
+                <button id="tinhkyso" class="btn btn-outline-danger">TÍNH</button>
+            </div>
+
+        </div>
+        <div class="card-footer alert alert-success">
+            <span id="ketquabai5"></span>
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
